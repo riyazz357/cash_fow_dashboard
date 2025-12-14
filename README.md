@@ -1,8 +1,7 @@
-# 💰 Personal Expense Tracker (Day 7)
+# 💰 Personal Expense Tracker 
 
 A persistent, data-driven expense dashboard built with **Streamlit**. It allows users to log transactions, saves data to a local CSV file, and provides real-time visualization of spending habits.
 
-**Part of the "15 Days, 15 Projects" Challenge.**
 
 ## 🚀 Features
 
