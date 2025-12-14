@@ -1,53 +1,28 @@
-# 💰 Personal Expense Tracker 
+# 💰 Expense Tracker Pro
 
-A persistent, data-driven expense dashboard built with **Streamlit**. It allows users to log transactions, saves data to a local CSV file, and provides real-time visualization of spending habits.
+A desktop GUI application built with Python's **Tkinter** to track personal finances. It allows users to log daily expenses, persist data in a CSV file, and visualize spending habits with embedded **Matplotlib** charts.
+
 
 
 ## 🚀 Features
 
-* **Data Entry Form:** Easy input for Date, Category (Food, Rent, Transport, etc.), and Amount.
-* **Persistent Storage:** Automatically saves all data to `expenses.csv`. Data remains even after closing the app.
-* **Smart Analytics:**
-    * **Pie Chart:** Visual breakdown of spending by category using Plotly.
-    * **Trend Line:** (Optional) Shows spending over time.
-    * **Total KPI:** Instantly calculates total money spent.
-* **Data Management:** View raw data in a sortable table and delete entries (via CSV management).
+* **Desktop GUI:** Native Windows/Mac/Linux interface using `tkinter`.
+* **Data Persistence:** Automatically saves and loads transactions from `expenses.csv`.
+* **Interactive Charts:** Embeds a real-time **Pie Chart** directly in the application window to visualize spending by category.
+* **Smart Validation:** Prevents invalid inputs (e.g., text in the "Amount" field).
+* **Live Updates:** The table and total spending summary update instantly upon adding an entry.
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** [Streamlit](https://streamlit.io/)
-* **Data Processing:** [Pandas](https://pandas.pydata.org/)
-* **Visualization:** [Plotly Express](https://plotly.com/python/)
+* **Language:** Python 3.x
+* **GUI Framework:** `tkinter` (Built-in)
+* **Data Handling:** `pandas` (CSV manipulation)
+* **Visualization:** `matplotlib` (Charts embedded in GUI)
 
 ## ⚙️ Installation
 
 ### 1. Install Dependencies
+You only need to install `pandas` and `matplotlib`. Tkinter is included with Python.
 ```bash
-# 💰 Personal Expense Tracker (Day 7)
-
-A persistent, data-driven expense dashboard built with **Streamlit**. It allows users to log transactions, saves data to a local CSV file, and provides real-time visualization of spending habits.
-
-**Part of the "15 Days, 15 Projects" Challenge.**
-
-## 🚀 Features
-
-* **Data Entry Form:** Easy input for Date, Category (Food, Rent, Transport, etc.), and Amount.
-* **Persistent Storage:** Automatically saves all data to `expenses.csv`. Data remains even after closing the app.
-* **Smart Analytics:**
-    * **Pie Chart:** Visual breakdown of spending by category using Plotly.
-    * **Trend Line:** (Optional) Shows spending over time.
-    * **Total KPI:** Instantly calculates total money spent.
-* **Data Management:** View raw data in a sortable table and delete entries (via CSV management).
-
-## 🛠️ Tech Stack
-
-* **Frontend:** [Streamlit](https://streamlit.io/)
-* **Data Processing:** [Pandas](https://pandas.pydata.org/)
-* **Visualization:** [Plotly Express](https://plotly.com/python/)
-
-## ⚙️ Installation
-
-### 1. Install Dependencies
-```bash
-pip install streamlit pandas plotly
-streamlit run app.py
+pip install pandas matplotlib
+python tracker.py
